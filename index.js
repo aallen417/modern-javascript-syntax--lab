@@ -44,3 +44,20 @@ const pizzaToppings2 = ['Pineapple', 'Olives', 'Anchovies']
 const controversialPizzaToppings = [...pizzaToppings2]
 
 console.log(controversialPizzaToppings)
+
+
+// Duplicate the following object and spread its values into a new variable `myCar`.
+
+const car2 = {
+  make: 'Audi',
+  model: 'q5',
+};
+
+// Change the `model` property of `myCar` to 'q7'. Log both objects.
+
+// Your code here
+const myCar = { ...car2 }
+console.log(myCar)
+myCar.model = "q7"
+console.log(car2)
+console.log(myCar)
