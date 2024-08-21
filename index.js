@@ -1,6 +1,6 @@
 // Use `.map()` to iterate over the following array:
 
-const nums = [13, 87, 2, 89, 12, 4, 90, 63];
+const nums = [13, 87, 2, 89, 12, 4, 90, 63]
 
 // Create a new array where each value is multiplied by 2 and log the new array.
 
@@ -94,12 +94,12 @@ function sentence(noun = "cat", adjective = "white") {
 
 // Convert the following `if...else` statement in to a ternary:
 
-let pizza = 'tasty';
+let pizza = 'tasty'
 
 if (pizza === 'tasty') {
-  console.log('yum');
+  console.log('yum')
 } else {
-  console.log('yuck');
+  console.log('yuck')
 }
 
 // Your code here
@@ -120,7 +120,7 @@ const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
 // Your code here
 const LANG = localLangConfig || "en"
 // Log the result
-console.log('Language setting:', LANG);
+console.log('Language setting:', LANG)
 
 
 // 2. SET WEBSITE THEME
@@ -133,4 +133,14 @@ const userSavedTheme = null; // Change to 'dark', 'contrast', etc., or keep it n
 // Your code here
 const USER_THEME = userSavedTheme || "light"
 // Log the result
-console.log('User theme setting:', USER_THEME);
+console.log('User theme setting:', USER_THEME)
+
+
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+  name: 'Alice',
+};
+
+let cat = adventurer.cat?.age; // Your code here
+console.log(cat)
